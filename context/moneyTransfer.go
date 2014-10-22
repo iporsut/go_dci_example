@@ -6,5 +6,5 @@ import (
 )
 
 func TransferMoney(source, destination model.Accounter, amount float32) {
-	role.TransferSource{source}.TransferTo(destination, amount)
+	role.TransferSource(source).TransferTo(destination, amount)
 }
